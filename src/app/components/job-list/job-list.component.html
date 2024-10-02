@@ -1,0 +1,18 @@
+<div class="job-list">
+  <ul>
+    <li
+      *ngFor="let job of jobs"
+      (click)="onJobSelected(job)"
+      [class.active]="job === selectedJob"
+      class="job-card"
+    >
+      <div class="job-content">
+        <h4>{{ job.title }}</h4>
+        <p>{{ job.companyName }}</p>
+        <p>{{ job.location }}</p>
+        <p>{{ job.jobType }}</p>
+        <p>{{ job.jobDescription }}</p>
+      </div>
+    </li>
+  </ul>
+</div>

@@ -1,1 +1,95 @@
-/* You can add global styles to this file, and also import other style files */
+/* Navbar Styling */
+.navbar {
+  background-color: #f8f9fa;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-brand a {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.navbar-menu li a {
+  color: #333;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.navbar-search {
+  display: flex;
+  gap: 10px;
+}
+
+.navbar-search input[type="text"] {
+  padding: 5px;
+  font-size: 14px;
+  width: 150px;
+}
+
+.navbar-search button {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Job List Styling */
+.job-list-container {
+  width: 30%;
+  border-right: 1px solid #ddd;
+  padding: 20px;
+}
+
+.job-list {
+  list-style: none;
+  padding: 0;
+}
+
+.job-list li {
+  padding: 10px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.job-list li.active {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Job Details Styling */
+.job-details-container {
+  padding: 20px;
+}
+
+.job-details-placeholder {
+  padding: 20px;
+  text-align: center;
+  color: #888;
+}
+.app-container {
+  display: flex;
+  height: 100vh;
+}
+:root {
+  --background-color: #ffffff; /* Replace with your desired background color */
+  --card-box-shadow-1-y: 3px; /* Replace with your desired box shadow values */
+  --card-box-shadow-1-blur: 6px;
+  --card-box-shadow-1: rgba(0, 0, 0, 0.16);
+  --card-box-shadow-2-y: 2px;
+  --card-box-shadow-2-blur: 4px;
+  --card-box-shadow-2: rgba(0, 0, 0, 0.12);
+  --card-border-color: #e0e0e0; /* Replace with your desired border color */
+}
